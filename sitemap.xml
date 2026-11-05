@@ -1,37 +1,12 @@
 
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
-    <url>
-        <loc>http://127.0.0.1:5500/</loc>
-    </url>
-
-    <url>
-        <loc>http://127.0.0.1:5500/about.html</loc>
-    </url>
-
-    <url>
-        <loc>http://127.0.0.1:5500/sustainable-living.html</loc>
-    </url>
-
-    <url>
-        <loc>http://127.0.0.1:5500/waste-management.html</loc>
-    </url>
-
-    <url>
-        <loc>http://127.0.0.1:5500/eco-homes.html</loc>
-    </url>
-
-    <url>
-        <loc>http://127.0.0.1:5500/sustainable-travel.html</loc>
-    </url>
-
-    <url>
-        <loc>http://127.0.0.1:5500/blog.html</loc>
-    </url>
-
-    <url>
-        <loc>http://127.0.0.1:5500/contact.html</loc>
-    </url>
-
+  <url><loc>https://meghae23.github.io/ecoliving-india/</loc></url>
+  <url><loc>https://meghae23.github.io/ecoliving-india/about.html</loc></url>
+  <url><loc>https://meghae23.github.io/ecoliving-india/sustainable-living.html</loc></url>
+  <url><loc>https://meghae23.github.io/ecoliving-india/waste-management.html</loc></url>
+  <url><loc>https://meghae23.github.io/ecoliving-india/eco-homes.html</loc></url>
+  <url><loc>https://meghae23.github.io/ecoliving-india/sustainable-travel.html</loc></url>
+  <url><loc>https://meghae23.github.io/ecoliving-india/blog.html</loc></url>
+  <url><loc>https://meghae23.github.io/ecoliving-india/contact.html</loc></url>
 </urlset>
