@@ -1,0 +1,367 @@
+
+/* =================================
+   ECOLIVING INDIA - PREMIUM DESIGN
+================================= */
+
+:root {
+    --forest: #214b35;
+    --deep-green: #173b29;
+    --sage: #a8b98b;
+    --cream: #f7f5eb;
+    --white: #ffffff;
+    --text: #293b30;
+    --muted: #68766b;
+    --border: #e4e8dc;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: var(--cream);
+    color: var(--text);
+    line-height: 1.7;
+}
+
+/* NAVIGATION */
+
+header {
+    background: rgba(255,255,255,0.97);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 3px 18px rgba(0,0,0,0.05);
+}
+
+.navbar {
+    max-width: 1400px;
+    margin: auto;
+    min-height: 85px;
+    padding: 18px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+}
+
+.navbar h2 {
+    font-family: Georgia, serif;
+    font-size: 27px;
+    color: var(--forest);
+    white-space: nowrap;
+}
+
+.navbar h2 span {
+    color: var(--sage);
+}
+
+.navbar ul {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    list-style: none;
+}
+
+.navbar a {
+    color: var(--text);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    color: #78965c;
+}
+
+/* HOMEPAGE HERO */
+
+.hero {
+    min-height: 650px;
+    display: flex;
+    align-items: center;
+    padding: 90px 10%;
+    background:
+    linear-gradient(
+        90deg,
+        rgba(17,48,32,0.88),
+        rgba(17,48,32,0.18)
+    ),
+    url("https://images.unsplash.com/photo-1441974231531-c6227db76b6e")
+    center/cover no-repeat;
+    color: white;
+}
+
+.hero-content {
+    max-width: 720px;
+}
+
+.tagline {
+    color: #d6e4b8;
+    letter-spacing: 4px;
+    font-size: 13px;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+
+.hero h1 {
+    font-family: Georgia, serif;
+    font-size: clamp(48px, 6vw, 78px);
+    line-height: 1.12;
+    margin-bottom: 25px;
+}
+
+.hero-content > p:not(.tagline) {
+    font-size: 18px;
+    max-width: 590px;
+    line-height: 1.8;
+}
+
+/* BUTTONS */
+
+.btn {
+    display: inline-block;
+    margin-top: 28px;
+    padding: 15px 32px;
+    background: var(--sage);
+    color: var(--deep-green);
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: white;
+    transform: translateY(-3px);
+}
+
+/* GENERAL SECTIONS */
+
+.about,
+.topics {
+    max-width: 1250px;
+    margin: auto;
+    padding: 85px 8%;
+    text-align: center;
+}
+
+.about h1,
+.topics h2 {
+    font-family: Georgia, serif;
+    color: var(--forest);
+    font-size: clamp(32px, 4vw, 46px);
+    margin-bottom: 24px;
+}
+
+.about h2 {
+    color: var(--forest);
+    font-family: Georgia, serif;
+    font-size: 28px;
+    margin-top: 45px;
+    margin-bottom: 15px;
+}
+
+.about h3 {
+    color: var(--forest);
+    font-size: 20px;
+    margin-top: 28px;
+    margin-bottom: 10px;
+}
+
+.about p {
+    max-width: 850px;
+    margin: 15px auto;
+    color: var(--muted);
+    font-size: 16px;
+    line-height: 1.9;
+}
+
+/* TOPIC CARDS */
+
+.topic-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px;
+    margin-top: 45px;
+}
+
+.topic-card {
+    background: white;
+    padding: 45px 30px;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    box-shadow: 0 8px 25px rgba(31,65,43,0.05);
+    transition: 0.3s;
+}
+
+.topic-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 15px 35px rgba(31,65,43,0.12);
+}
+
+.topic-card h3 {
+    font-family: Georgia, serif;
+    color: var(--forest);
+    font-size: 23px;
+    margin-bottom: 12px;
+}
+
+.topic-card p {
+    color: var(--muted);
+}
+
+/* CONTACT FORM */
+
+.contact-form {
+    max-width: 580px;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+    text-align: left;
+}
+
+.contact-form label {
+    font-weight: 600;
+    color: var(--forest);
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 16px;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    background: white;
+    font-family: inherit;
+    font-size: 15px;
+    outline: none;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: var(--forest);
+    box-shadow: 0 0 0 3px rgba(33,75,53,0.08);
+}
+
+.contact-form button {
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+/* FORM RESPONSE */
+
+#form-response {
+    color: var(--forest);
+    font-weight: 600;
+}
+
+/* FOOTER */
+
+footer {
+    background: var(--deep-green);
+    color: white;
+    padding: 55px 20px;
+    text-align: center;
+}
+
+footer h2 {
+    font-family: Georgia, serif;
+    font-size: 30px;
+    margin-bottom: 12px;
+}
+
+footer p {
+    color: #d5e0d4;
+    margin: 7px 0;
+    font-size: 14px;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .navbar ul {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .hero {
+        min-height: 520px;
+        padding: 65px 7%;
+    }
+
+    .hero h1 {
+        font-size: 46px;
+    }
+
+    .topic-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about,
+    .topics {
+        padding: 60px 7%;
+    }
+}
+
+@media (max-width: 420px) {
+
+    .navbar h2 {
+        font-size: 23px;
+    }
+
+    .navbar ul {
+        gap: 12px;
+    }
+
+    .navbar a {
+        font-size: 12px;
+    }
+
+    .hero h1 {
+        font-size: 39px;
+    }
+
+    .hero-content > p:not(.tagline) {
+        font-size: 15px;
+    }
+}
+
+/* Clickable topic cards */
+
+.topic-card {
+    display: block;
+    text-decoration: none;
+    color: var(--text);
+}
+
+.topic-card h3 {
+    color: var(--forest);
+}
+
+.topic-card p {
+    color: var(--muted);
+}
+
+.topic-card:focus-visible,
+.navbar a:focus-visible {
+    outline: 3px solid var(--sage);
+    outline-offset: 4px;
+}
