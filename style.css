@@ -52,14 +52,14 @@ header {
     gap: 25px;
 }
 
-.navbar h2 {
+.navbar .brand {
     font-family: Georgia, serif;
     font-size: 27px;
     color: var(--forest);
     white-space: nowrap;
 }
 
-.navbar h2 span {
+.navbar .brand span {
     color: var(--sage);
 }
 
@@ -275,7 +275,7 @@ footer {
     text-align: center;
 }
 
-footer h2 {
+footer .brand {
     font-family: Georgia, serif;
     font-size: 30px;
     margin-bottom: 12px;
@@ -323,7 +323,7 @@ footer p {
 
 @media (max-width: 420px) {
 
-    .navbar h2 {
+    .navbar .brand {
         font-size: 23px;
     }
 
@@ -365,3 +365,8 @@ footer p {
     outline: 3px solid var(--sage);
     outline-offset: 4px;
 }
+
+.breadcrumbs {text-align:left;font-size:14px;margin-bottom:24px;color:#293b30;}
+.breadcrumbs a, .about p a {color:#214b35;text-decoration:underline;}
+footer a {color:#fff;}
+.about p {color:#526257;}

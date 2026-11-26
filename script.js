@@ -2,7 +2,7 @@ function handleContact(event) {
     event.preventDefault();
 
     document.getElementById("form-response").textContent =
-        "Thank you! Your message has been received.";
+        "Demo form completed. No message was sent.";
 
     event.target.reset();
 }
